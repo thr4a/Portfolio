@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <section>
+    <h2>Personal Information</h2>
+    <p>Name: Your Name<br>
+      Location: City, State<br>
+      Email: your.email@example.com<br>
+      LinkedIn: <a href="https://www.linkedin.com/in/yourname">LinkedIn Profile</a><br>
+      GitHub: <a href="https://github.com/yourusername">GitHub Profile</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p>Web Development<br>
+      - HTML, CSS, JavaScript<br>
+      - Frontend Frameworks (e.g., React)<br>
+      - Backend Technologies (e.g., Node.js, Django)<br>
+      Data Science<br>
+      - Python, R<br>
+      - Machine Learning, Data Analysis<br>
+      Graphic Design<br>
+      - Adobe Creative Suite (Photoshop, Illustrator)<br>
+      Project Management<br>
+      - Agile, Scrum<br>
+      Communication<br>
+      - Written and Verbal
+    </p>
+  </section>
+
+  <!-- Repeat the above structure for other sections -->
+
+  <script>
+    // JavaScript to toggle section visibility
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section) => {
+      section.addEventListener("click", () => {
+        section.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
