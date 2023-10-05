@@ -14,17 +14,23 @@ body {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping if the content exceeds the width */
 }
 
 /* Styling for the portfolio sections */
 section {
+  flex: 1; /* Equal width for each section */
   border: 1px solid #ccc;
-  margin: 10px 0;
+  margin: 10px;
   padding: 20px;
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease, border 0.3s ease, transform 0.2s ease;
+  min-width: 200px; /* Minimum width for each section */
+  max-width: 300px; /* Maximum width for each section */
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 section:hover {
