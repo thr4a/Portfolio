@@ -1,0 +1,33 @@
+/* Styling for the portfolio sections */
+section {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section:hover {
+  background-color: #ddd;
+}
+
+/* Styling for the section titles */
+section h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Hide section content by default */
+section p {
+  display: none;
+}
+
+/* Styling for expanded section content */
+section.active {
+  background-color: #ddd;
+}
+
+section.active p {
+  display: block;
+}
