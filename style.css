@@ -24,12 +24,13 @@ section {
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, border 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease, transform 0.2s ease;
 }
 
 section:hover {
   background-color: #f0f0f0;
   border: 1px solid #999;
+  transform: translateY(-3px); /* Move up 3 pixels on hover */
 }
 
 /* Styling for the section titles */
@@ -48,6 +49,7 @@ section p {
 section.active {
   background-color: #f0f0f0;
   border: 1px solid #999;
+  transform: translateY(-3px); /* Move up 3 pixels when active */
 }
 
 section.active p {
